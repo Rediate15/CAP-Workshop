@@ -9,7 +9,7 @@ Authorization: Basic sarah.smith@example.com:123
 GET http://localhost:4004/odata/v4/order/Books
 
 ### GET all Orders with Items
-GET http://localhost:4004/odata/v4/order/Orders?$expand=items&$orderby=number
+GET http://localhost:4004/odata/v4/order/Orders?$expand=items
 Authorization: Basic sarah.smith@example.com:123
 
 ### Cancel Order
