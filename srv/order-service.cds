@@ -6,10 +6,7 @@ service OrderService {
         author.surname as surname
     }
 
-    entity Orders as projection on db.Orders {
-        *,
-        status @readonly
-    }
+    entity Orders as projection on db.Orders
     actions {
         action cancel();
         action submit();
